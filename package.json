@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "build-all": "npm run build --workspaces  --if-present",
-    "install-all": "npm install --workspaces  --if-present"
+    "install-all": "npm install --workspaces  --if-present",
+    "lint-all": "eslint .",
+    "lint-fix-all": "eslint . --fix"
   },
   "author": "raulgf92",
   "license": "ISC",
@@ -23,6 +25,9 @@
     "@types/express": "^4.17.13",
     "@types/mocha": "^9.1.0",
     "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
+    "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-workspaces": "^0.7.0",

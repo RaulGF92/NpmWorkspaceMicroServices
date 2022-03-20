@@ -1,0 +1,14 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": ["workspaces", "@typescript-eslint"],
+    "rules": {
+        "workspaces/no-relative-imports": "error",
+        "workspaces/require-dependency": "warn"
+    }
+}
