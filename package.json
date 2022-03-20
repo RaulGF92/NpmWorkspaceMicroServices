@@ -6,7 +6,8 @@
     "build-all": "npm run build --workspaces  --if-present",
     "install-all": "npm install --workspaces  --if-present",
     "lint-all": "eslint .",
-    "lint-fix-all": "eslint . --fix"
+    "lint-fix-all": "eslint . --fix",
+    "prepare": "husky install"
   },
   "author": "raulgf92",
   "license": "ISC",
@@ -31,6 +32,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-workspaces": "^0.7.0",
-    "typescript": "^4.6.2"
+    "typescript": "^4.6.2",
+    "husky": "^7.0.0"
   }
 }
