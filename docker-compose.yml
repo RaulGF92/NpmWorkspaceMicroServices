@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  user-service:
+    build:
+      context: .
+      dockerfile: ./applications/user-service/build/Dockerfile
+    ports:
+      - "8080:3000"
