@@ -1,18 +1,14 @@
 {
-  "name": "hello-i18n",
+  "name": "temperature-service",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.ts",
-  "files": [
-    "src", "dist"
-  ],
+  "main": "dist/index.js",
+  "devDependencies": {},
   "scripts": {
     "build": "tsc",
     "lint": "eslint src",
     "lint-fix": "eslint src --fix"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {}
+  "license": "ISC"
 }

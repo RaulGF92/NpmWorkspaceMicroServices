@@ -6,3 +6,9 @@ services:
       dockerfile: ./applications/user-service/build/Dockerfile
     ports:
       - "8080:3000"
+  temperature-service:
+    build:
+      context: .
+      dockerfile: ./applications/temperature-service/build/Dockerfile
+    ports:
+      - "8081:3000"

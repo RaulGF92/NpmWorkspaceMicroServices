@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build-all": "npm run build --workspaces  --if-present",
+    "build-all": "npm run build --workspaces --if-present",
     "install-all": "npm install --workspaces  --if-present",
-    "lint-all": "eslint .",
-    "lint-fix-all": "eslint . --fix",
-    "prepare": "husky install"
+    "lint-all": "npm run lint --workspaces --if-present",
+    "lint-fix-all": "npm run lint-fix --workspaces --if-present"
   },
   "author": "raulgf92",
   "license": "ISC",
   "workspaces": [
+    "libs/*",
     "applications/user-service",
-    "libs/hello-i18n"
+    "applications/temperature-service"
   ],
   "dependencies": {
     "chai": "^4.3.6",

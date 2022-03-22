@@ -4,7 +4,7 @@ class HelloI18n {
     static getHelloByLanguage(lang) {
         switch (lang) {
             default:
-                return "Hello";
+                return 'Hello';
         }
     }
 }
