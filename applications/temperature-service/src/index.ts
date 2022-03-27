@@ -4,9 +4,8 @@ import HelloI18n from 'hello-i18n'
 const app = express()
 const port = 3000
 
-app.get('/hi', (req, res) => {
-    const userName = 'Raúl'
-    res.json({ msg: HelloI18n.getHelloByLanguage() + userName })
+app.get('/temp', (req, res) => {
+    res.json({ temp: Math.random() + 15.6 })
 })
 
 app.listen(port, () => {
